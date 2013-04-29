@@ -51,9 +51,9 @@
 
         <div id="nav">
           <ul>
-            <li><a id="nav_home" href="index.html"></a></li>
-            <li><a id="nav_portfolio" href="portfolio.html"></a></li>
-            <li><a id="nav_skills" href="skills.html"></a></li>
+            <li <%= page_classes == 'index' ? 'class="current"' : '' %>><a id="nav_home" href="index.html"></a></li>
+            <li <%= page_classes == 'portfolio' ? 'class="current"' : '' %>><a id="nav_portfolio" href="portfolio.html"></a></li>
+            <li <%= page_classes == 'skills' ? 'class="current"' : '' %>><a id="nav_skills" href="skills.html"></a></li>
           </ul>
         </div>
 
