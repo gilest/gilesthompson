@@ -75,3 +75,10 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.user = "gilesthompson"
+  deploy.host = "gilesthompson.co.nz"
+  deploy.path = "/home/gilesthompson/gilesthompson.co.nz"
+end

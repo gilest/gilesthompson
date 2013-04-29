@@ -1,6 +1,5 @@
-- Configure deployment
-
 DONE
 - Current classes for pages. Could be tidied up though.
 - Clever CoffeScript mailto: for contact form and remove response message. Could have simple validation or user feedback. Is this a bad experience now?
 - CoffeeScript to update current year.
+- Configure deployment.
