@@ -1,0 +1,345 @@
+/* reset styles */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	}
+ol, ul {
+	list-style: none;
+	}
+blockquote, q {
+	quotes: none;
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+	
+
+/* custom selection colors */
+
+::-moz-selection {
+	color: #fff;
+	color: rgba(255,255,255,.85);
+	background: #2d508a;
+	}
+::selection {
+	color: #fff;
+	color: rgba(255,255,255,.85);
+	background: #2d508a;
+	}
+		
+/* page classes and body styles */
+
+body {
+	background: url('/images/page_bg.jpg');
+	font-size: 14px;
+	font-family:  'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+body, h1, h2, h3, p, table, ul, li, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+}
+.box {
+	color: #444;
+	background-color: #fff;
+	border: 1px solid #dadada;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	padding: 20px;
+}
+.clear { clear: both; }
+img { border: 0; }
+
+#top_banner {
+	background: url('/images/top_banner_bg.jpg') repeat-x;
+	height: 14px;
+	width: 100%;
+}
+#main {
+	background: url('/images/main_bg.jpg');
+	padding-bottom: 40px;
+}
+#header {
+	width: 980px;
+	margin: 0 auto;
+	padding: 20px 0 10px 0;
+}
+#logo {
+	margin-top: -8px;
+	color: #6e6e6e;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 45px;
+	text-shadow: 2px 2px 0px #fff;
+}
+#nav {
+	float: right;
+}
+#nav ul {
+	list-style-type: none;
+}
+#nav li {
+	float: left;
+}
+#nav a {
+	display: block;
+	cursor: pointer;
+	height: 55px;
+}
+#nav_home {
+	background-image: url('/images/home.jpg');
+	width: 114px;
+}
+#nav_home:hover {
+	background-image: url('/images/home_hover.jpg');
+}
+li.current #nav_home {
+	background-image: url('/images/home_hover.jpg');
+}
+#nav_portfolio {
+	background-image: url('/images/portfolio.jpg');
+	width: 142px;
+}
+#nav_portfolio:hover {
+	background-image: url('/images/portfolio_hover.jpg');
+}
+li.current #nav_portfolio {
+	background-image: url('/images/portfolio_hover.jpg');
+}
+#nav_skills {
+	background-image: url('/images/skills.jpg');
+	width: 123px;
+}
+#nav_skills:hover {
+	background-image: url('/images/skills_hover.jpg');
+}
+li.current #nav_skills {
+	background-image: url('/images/skills_hover.jpg');
+}
+#content {
+	width: 980px;
+	margin: 0 auto;
+}
+#content ul {
+	list-style-image: url('/images/bullet.gif');
+	margin-left: 20px;
+}
+
+/* individual element styles */
+#slide {
+	width: 940px;
+	height: 240px;
+	margin: 30px auto 30px auto;
+	background: url('/images/banner_bg.jpg') no-repeat !important;
+}
+.banner {
+	width: 940px;
+	height: 217px;
+}
+.imac {
+	position: absolute;
+	float: left;
+	margin: 17px 0 0 17px;
+}
+.banner_content {
+	padding: 50px 60px 0 300px;
+	height: 120px;
+	width: 580px;
+}
+.banner_content h1 {
+	font-size: 18px;
+	color: #fff;
+	font-weight: normal;
+}
+.banner_content h2 {
+	margin-top: 15px;
+	font-size: 14px;
+	line-height: 22px;
+	color: #c9c9c9;
+	font-weight: normal;
+}
+.banner_content a {
+	color: #fff;
+}
+#testimonials {
+	width: 940px;
+	margin: 0 auto;
+}
+.box h2 {
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 19px;
+	line-height: 1;
+}
+.testimonial {
+	width: 302px;
+	height: 119px;
+	background: url('/images/testimonial_bg.jpg');
+	float: left;
+	margin-right: 17px;
+}
+.testimonial_text {
+	margin: 17px auto 0 auto;
+	width: 262px;
+	font-size: 12px;
+	height: 50px;
+	line-height: 18px;
+}
+.testimonial_client {
+	font-size: 12px;
+	margin: 31px 0 0 0;
+	text-align: center;
+}
+#linkedin {
+	padding-top: 20px;
+	text-align: center;
+}
+.portfolio {
+	margin: 30px auto 0 auto;
+	height: 200px;
+	font-size: 12px;
+	line-height: 19px;
+}
+.portfolio_image {
+	float: right;
+	margin-left: 20px;
+}
+#skills {
+	margin: 30px auto 0 auto;
+	font-size: 12px;
+	line-height: 1.5;
+	height: 250px;
+}
+.skills_column {
+	width: 380px;
+}
+.skills_column, .skills_image {
+	float: left;
+	margin-right: 20px;
+}
+
+#download_cv {
+	display: block;
+	width: 924px;
+	margin: 30px auto 0;
+	background-color: #555555;
+	text-align: center;
+	padding: 8px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	font-size: 25px;
+	border: none;
+	text-shadow: 1px 1px 0px #363636;
+}
+
+#download_cv:hover {
+	background-color: #6b6b6b;
+}
+
+/* footer styles */
+#top_footer_wrap {
+	background: url('/images/top_footer_wrap_bg.jpg') repeat-x;
+	height: 8px;
+	width: 100%;
+}
+#footer_wrap {
+	background: url('/images/footer_wrap_bg.jpg');
+	width: 100%;
+}
+#enquiry {
+	width: 940px;
+	margin: 0 auto;
+	padding: 30px 20px;
+	color: #555;
+	text-shadow: 0px 1px 0px #e7e8e8;
+	font-size: 14px;
+}
+#enquiry h2 {
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 6px;
+}
+.enquiry_column {
+	float: left;
+	margin-right: 20px;
+}
+#make_an_enquiry {
+	width: 220px;
+}
+#your_details {
+	width: 220px;
+}
+#name_field, #email_field {
+	margin: 2px 0;
+	width: 211px;
+}
+#name_field {
+	margin-bottom: 9px;
+}
+#your_enquiry {
+	width: 460px;
+	margin-right: 0;
+}
+#enquiry_field {
+	width: 460px;
+	height: 100px;
+	margin: 2px 0;
+}
+#name_field, #email_field, #enquiry_field {
+	font-size: 12px;
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	border: 1px solid #9b9b9b;
+}
+#send_button {
+	float: right;
+	background: url('/images/send.jpg');
+	width: 65px;
+	height: 20px;
+	border: none;
+	cursor: pointer;
+	margin-top: 3px;
+}
+#send_button:hover {
+	background: url('/images/send_hover.jpg');
+}
+.thanks {
+	color: green;
+}
+
+/* bottom footer */
+#top_footer2_wrap {
+	background: url('/images/top_footer2_wrap_bg.jpg') repeat-x;
+	height: 6px;
+	width: 100%;
+}
+#footer2 {
+	width: 980px;
+	margin: 7px auto 12px auto;
+	color: #ebebeb;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 0px 1px 0px #323232;
+}
+#footer_nav {
+	float: right;
+}
+#footer2 a {
+	color: #ebebeb;
+	text-decoration: none;
+	margin-left: 6px;
+}
+#footer2 a:hover {
+	color: #b6b6b6;
+}

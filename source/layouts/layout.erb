@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><%= "Freelance Web Developer Auckland - Giles Thompson#{data.page.title}"%></title>
+    <meta name="description" content="Giles Thompson is a freelance web developer based in Auckland, New Zealand. I specialise in Ruby on Rails applications and database driven content websites." >
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag "style" %>
+    <!--[if lte IE 7]>
+      <link type="text/css" rel="stylesheet" href="iesucks.css">
+    <![endif]-->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <%= javascript_include_tag  "all" %>
+    <script type="text/javascript">
+      $(document).ready(
+        function() 
+        {
+          $('#slide').cycle
+          (
+            {
+              fx: 'scrollHorz',
+              easing: 'easeOutExpo',
+              cleartype: !$.support.opacity,
+              cleartypeNoBg: true,
+              speed: 1800,
+              pause: 1,
+              timeout: 8000
+            }
+          );
+        }
+      );
+    </script>
+    <script type="text/javascript">
+      $.preloadImages("images/home_hover.jpg", "images/portfolio_hover.jpg", "images/skills_hover.jpg", "images/send_hover.jpg");
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-25644416-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="top_banner"></div>
+    <div id="main">
+      <div id="header">
+
+        <div id="nav">
+          <ul>
+            <li><a id="nav_home" href="index.html"></a></li>
+            <li><a id="nav_portfolio" href="portfolio.html"></a></li>
+            <li><a id="nav_skills" href="skills.html"></a></li>
+          </ul>
+        </div>
+
+        <div id="logo">Giles Thompson</div>
+
+      </div>
+
+      <div id="content">
+        <%= yield %>
+        <a class="box" id="download_cv" href="NEW_CV_FRESH.pdf" target="_blank"><img height="18" src="images/download_arrow.png" alt="" /> Download My CV</a>
+
+      </div>
+    </div>
+  
+    <div id="top_footer_wrap"></div>
+    <div id="footer_wrap">
+      <div id="enquiry">
+        <h2><img src="images/enquiry.gif" alt="Envelope" /> &nbsp;Make an enquiry</h2>
+        <div class="enquiry_column" id="make_an_enquiry">
+          Get in touch by filling out the<br />
+          enquiry form.<br />
+          <br />
+          Or you can reach me by:<br />
+          Phone: (09) 376 5112<br />
+          Mobile: 027 282 2762
+        </div>
+        <form method="post" action="'.$currentPage.'">
+          <div class="enquiry_column" id="your_details">
+              <label>Your name</label><br />
+              <input type="text" name="name" id="name_field" /><br />
+              <label>Your email</label><br />
+              <input type="text" name="email" id="email_field" />
+          </div>
+          <div class="enquiry_column" id="your_enquiry">
+            <label>Your enquiry</label><br />
+            <textarea name="enquiry" id="enquiry_field"></textarea><br />
+            <input type="submit" id="send_button" value="" />
+            '.$thanks.'
+          </div>
+        </form>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+    <div id="top_footer2_wrap"></div>
+    <div id="footer2">
+      <div id="footer_nav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="skills.html">Skills</a>
+      </div>
+      Giles Thompson <%= Date.today.year %>
+    </div>
+    </div>
+  </body>
+</html>
