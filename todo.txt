@@ -1,4 +1,6 @@
-- Current classes for pages
 - Clever CoffeScript mailto: for contact form and remove response message
 - CoffeeScript to update current year
 - Configure deployment
+
+DONE
+- Current classes for pages. Could be tidied up though.
