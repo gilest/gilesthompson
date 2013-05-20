@@ -47,6 +47,12 @@ body, h1, h2, h3, p, table, ul, li, img {
 	border: 0;
 	font-weight: normal;
 }
+.forkme {
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	border: 0;
+}
 .box {
 	color: #444;
 	background-color: #fff;
