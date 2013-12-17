@@ -1,0 +1,1 @@
+$.preloadImages "images/home_hover.jpg", "images/portfolio_hover.jpg", "images/skills_hover.jpg", "images/send_hover.jpg"

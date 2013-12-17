@@ -14,28 +14,6 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <%= javascript_include_tag  "all" %>
     <script type="text/javascript">
-      $(document).ready(
-        function() 
-        {
-          $('#slide').cycle
-          (
-            {
-              fx: 'scrollHorz',
-              easing: 'easeOutExpo',
-              cleartype: !$.support.opacity,
-              cleartypeNoBg: true,
-              speed: 1800,
-              pause: 1,
-              timeout: 8000
-            }
-          );
-        }
-      );
-    </script>
-    <script type="text/javascript">
-      $.preloadImages("images/home_hover.jpg", "images/portfolio_hover.jpg", "images/skills_hover.jpg", "images/send_hover.jpg");
-    </script>
-    <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-25644416-1']);
       _gaq.push(['_trackPageview']);
