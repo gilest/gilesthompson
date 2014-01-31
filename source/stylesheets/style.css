@@ -229,26 +229,6 @@ li.current #nav_skills {
 	margin-right: 20px;
 }
 
-#download_cv {
-	display: block;
-	width: 924px;
-	margin: 30px auto 0;
-	background-color: #555555;
-	text-align: center;
-	padding: 8px;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #fff;
-	font-weight: bold;
-	font-size: 25px;
-	border: none;
-	text-shadow: 1px 1px 0px #363636;
-}
-
-#download_cv:hover {
-	background-color: #6b6b6b;
-}
-
 /* footer styles */
 #top_footer_wrap {
 	background: url('/images/top_footer_wrap_bg.jpg') repeat-x;
