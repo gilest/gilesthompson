@@ -13,7 +13,7 @@ $(document).ready ->
       enquirySubject = "Online Enquiry from #{enquiryName}"
 
       # Build encoded mailto: link
-      enquiryMailtoLink = "mailto:iam@gilesthompson.co.nz?subject=#{encodeURI(enquirySubject)}&body=#{encodeURI(enquiryMessage)}"
+      enquiryMailtoLink = "mailto:me@gilesthompson.co.nz?subject=#{encodeURI(enquirySubject)}&body=#{encodeURI(enquiryMessage)}"
 
       # Send the user to their mail application
       window.location = enquiryMailtoLink
